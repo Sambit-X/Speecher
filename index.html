@@ -47,7 +47,7 @@
             formData.append('fileInput', file); // Ensure the name matches the backend
             fileInput.value = '';
             // Send formData to server using fetch API
-            fetch('http://127.0.0.1:5000/audio', { // Ensure the correct URL and port
+            fetch('https://speecher.onrender.com/audio', { // Ensure the correct URL and port
                 method: 'POST',
                 body: formData,
             })
