@@ -7,7 +7,7 @@ def speech_process(file):
         audio_text = r.listen(source)
         
         try:
-            text = r.recognize_whisper(audio_text)
+            text = r.recognize_google(audio_text)
             return(text)
         except:
             return("Error in process module!")
